@@ -3,6 +3,8 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
+        printNumbers(5,10);
+
         for (int i = 1; i <= 200; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
                 System.out.println("BuzzFizz");
@@ -14,5 +16,12 @@ public class Main {
                 System.out.println(i);
             }
         }
+
+    }
+    public static void printNumbers(int start, int end){
+        for(int i = start; i<= end; i++){
+            System.out.println(i);
+        }
+
     }
 }
